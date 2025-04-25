@@ -17,7 +17,6 @@ app.use(cors({
   }));
 app.use('/', authRoutes);
 app.use('/',taskRoutes);
-
 app.get("/api/validate-token", auth, (req, res) => {
     console.log("Token is valid")
     res.send("Token is valid");
